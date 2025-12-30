@@ -1,0 +1,122 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-dark-blue: #08194a;
+  --color-red-500: #ee0d09;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@utility flex-between {
+  @apply flex justify-between items-center;
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@layer base {
+  header {
+    @apply bg-white text-black w-full shadow-md;
+    .header-top {
+      @apply bg-dark-blue text-white pr-6 flex-between;
+    }
+    .text {
+      @apply bg-red-500 py-3 px-8 text-white text-lg max-md:w-screen;
+    }
+
+    .working-hour {
+      @apply max-md:hidden text-white text-lg py-3 px-8;
+    }
+
+    nav {
+      @apply flex-between px-8 py-5 max-md:pt-0 max-md:pr-0 relative;
+
+      img {
+        @apply w-38 max-md:pt-5 max-md:w-24;
+      }
+
+      div {
+        @apply flex items-center gap-2 max-md:block max-md:bg-dark-blue max-md:w-[50vw] max-md:h-[78vh] max-md:text-white max-md:p-6 text-center max-md:absolute top-0 max-md:mt-23 z-10 max-md:transition-all max-md:duration-500;
+
+        ul {
+          @apply flex items-center gap-4 max-md:block;
+        }
+
+        .border-right {
+          @apply h-6 w-px bg-gray-900 mx-3 max-md:hidden;
+        }
+      }
+
+      button {
+        @apply bg-red-500 py-2 px-4 text-white font-medium text-lg cursor-pointer hover:bg-dark-blue transition-all duration-300 max-md:mt-5 max-md:w-full max-md:hover:bg-white max-md:hover:text-dark-blue;
+      }
+
+      .icon {
+        @apply md:hidden cursor-pointer max-md:mt-5 max-md:mr-6;
+      }
+    }
+  }
+
+  footer {
+    @apply bg-dark-blue text-white pb-5 mt-10;
+
+    .footer-container {
+      @apply border-b-2 border-b-[#1e294a] max-md:pr-4;
+
+      .grid {
+        @apply max-w-[75vw] max-md:max-w-[100vw] mx-auto grid max-md:grid-cols-2 grid-cols-3  justify-between max-md:pl-8;
+
+        div {
+          @apply border-r-2 border-r-[#1e294a] px-5;
+
+          .icon {
+            @apply text-red-500 size-9 mt-8;
+          }
+
+          p {
+            @apply text-lg py-2 text-wrap pb-4;
+          }
+        }
+      }
+    }
+
+    .footer-link {
+      @apply max-w-[85vw] max-md:max-w-[80vw] mx-auto mt-10 flex flex-wrap gap-5 justify-between items-start pb-6;
+
+      .text {
+        @apply text-base md:w-[33%] font-medium text-[#b2b9c5] pb-6;
+      }
+
+      h3 {
+        @apply text-xl font-bold pb-4;
+      }
+
+      ul {
+        a {
+          @apply text-[#b2b9c5] hover:text-white transition-all duration-300 font-medium;
+        }
+      }
+
+      .social-links {
+        p {
+          @apply pb-5 text-[#b2b9c5] text-base font-medium;
+        }
+
+        ul {
+          @apply flex gap-3 items-center;
+
+          li {
+            @apply size-10 border border-gray-200 rounded-full flex items-center cursor-pointer justify-center hover:bg-red-500 transition-all duration-500;
+          }
+        }
+      }
+    }
+
+    .copyright-text {
+      @apply text-center font-medium text-[#b2b9c5] pt-6 border-t border-t-[#1e294a];
+    }
+  }
+}
