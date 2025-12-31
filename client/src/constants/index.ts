@@ -7,6 +7,9 @@ import {
   Phone,
   Twitter,
 } from 'lucide-react';
+
+import play from '../assets/images/icons/play.webp';
+
 const navLinks = [
   {
     id: 1,
@@ -128,4 +131,4 @@ const socialLinks = [
   },
 ];
 
-export { navLinks, contactInfo, socialLinks, services, footerLink };
+export { navLinks, contactInfo, socialLinks, services, footerLink, play };

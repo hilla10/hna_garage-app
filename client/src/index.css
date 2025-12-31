@@ -18,6 +18,7 @@ body {
 }
 
 @layer base {
+  /* ============== Header Stye Start ============== */
   header {
     @apply bg-white text-black w-full shadow-md;
     .header-top {
@@ -60,6 +61,42 @@ body {
     }
   }
 
+  /* ============== Header Stye End ============== */
+
+  /* ============== Home Stye Start ============== */
+
+  .home {
+    /* Hero Section */
+    .hero {
+      @apply md:pt-40 md:pl-50 pl-10 pt-8 bg-[url('./assets/images/banner/banner.jpg')] bg-cover bg-center w-screen md:h-[80vh] h-[40vh];
+
+      .content {
+        @apply w-102.5 text-white;
+
+        p {
+          @apply text-white text-lg pr-2 font-medium;
+
+          span {
+            &:nth-child(2) {
+              @apply w-14 h-0.5 bg-red-500 inline-block ml-2;
+            }
+          }
+        }
+
+        h1 {
+          @apply text-3xl md:text-5xl font-bold py-4;
+        }
+
+        .play {
+          @apply size-14 rounded-full bg-red-500 flex-center;
+        }
+      }
+    }
+  }
+
+  /* ============== Home Stye End ============== */
+
+  /* ============== Footer Stye Start ============== */
   footer {
     @apply bg-dark-blue text-white pb-5 mt-10;
 
@@ -119,4 +156,6 @@ body {
       @apply text-center font-medium text-[#b2b9c5] pt-6 border-t border-t-[#1e294a];
     }
   }
+
+  /* ============== Footer Stye End ============== */
 }
