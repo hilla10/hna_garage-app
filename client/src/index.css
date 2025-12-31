@@ -18,7 +18,7 @@ body {
 }
 
 @layer base {
-  /* ============== Header Stye Start ============== */
+  /* ============== Header Style Start ============== */
   header {
     @apply bg-white text-black w-full shadow-md;
     .header-top {
@@ -61,14 +61,14 @@ body {
     }
   }
 
-  /* ============== Header Stye End ============== */
+  /* ============== Header Style End ============== */
 
-  /* ============== Home Stye Start ============== */
+  /* ============== Home Style Start ============== */
 
   .home {
     /* Hero Section */
     .hero {
-      @apply md:pt-40 md:pl-50 pl-10 pt-8 bg-[url('./assets/images/banner/banner.jpg')] bg-cover bg-center w-screen md:h-[80vh] h-[40vh];
+      @apply md:pt-40 md:pl-50 pl-10 pt-8 bg-[url('./assets/images/banner/banner.jpg')] bg-cover bg-center w-full md:h-[80vh] h-[40vh];
 
       .content {
         @apply w-102.5 text-white;
@@ -87,16 +87,16 @@ body {
           @apply text-3xl md:text-5xl font-bold py-4;
         }
 
-        .play {
+        button {
           @apply size-14 rounded-full bg-red-500 flex-center;
         }
       }
     }
   }
 
-  /* ============== Home Stye End ============== */
+  /* ============== Home Style End ============== */
 
-  /* ============== Footer Stye Start ============== */
+  /* ============== Footer Style Start ============== */
   footer {
     @apply bg-dark-blue text-white pb-5 mt-10;
 
@@ -157,5 +157,5 @@ body {
     }
   }
 
-  /* ============== Footer Stye End ============== */
+  /* ============== Footer Style End ============== */
 }

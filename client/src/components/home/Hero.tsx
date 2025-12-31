@@ -14,9 +14,9 @@ const Hero = () => {
           Tuneup Your Car <br /> to Next Level
         </h1>
         <div className='flex gap-4'>
-          <div className='play'>
-            <img src={play} alt='play icon' className='size-8' />
-          </div>
+          <button aria-label='Play intro video'>
+            <img src={play} alt='' className='size-8' />
+          </button>
           <p className='text-base uppercase'>
             Watch intro video <br /> about us
           </p>
