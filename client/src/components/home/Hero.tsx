@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
       {/* Content Overlay */}
       <div className='content'>
         {' '}
-        <p className='text-lg'>
+        <p>
           Working since <span className='font-bold text-red-600'>2003</span>
           <span />
         </p>

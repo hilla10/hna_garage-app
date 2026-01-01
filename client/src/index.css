@@ -68,13 +68,13 @@ body {
   .home {
     /* Hero Section */
     .hero {
-      @apply relative bg-cover bg-center w-full md:h-[80vh] h-[40vh];
+      @apply relative bg-cover bg-center w-full md:h-[80vh];
 
       .content {
-        @apply w-102.5 text-white absolute lg:top-40 lg:left-50 left-10 top-8;
+        @apply w-102.5 text-white absolute lg:top-40 lg:left-51 left-10 top-8 max-[460px]:top-2 max-[460px]:w-full;
 
         p {
-          @apply text-white text-lg pr-2 font-medium;
+          @apply text-white pr-2 font-medium text-lg max-[460px]:text-base max-[361px]:text-sm;
 
           span {
             &:nth-child(2) {
@@ -84,14 +84,61 @@ body {
         }
 
         h1 {
-          @apply text-3xl md:text-5xl font-bold py-4;
+          @apply text-3xl md:text-5xl font-bold py-4 max-[460px]:text-2xl max-[460px]:py-2 max-[361px]:text-lg;
         }
 
         .link {
-          @apply rounded-md bg-red-500 flex-center py-2 px-4 hover:text-red-500 hover:bg-white transition-all duration-300 mt-2 w-50;
+          @apply rounded-md bg-red-500 flex-center py-2 px-4 hover:text-red-500 hover:bg-white transition-all duration-300 mt-2 w-50 max-[460px]:mt-0 max-[460px]:w-38;
 
           a {
             @apply md:text-lg text-base font-medium;
+          }
+        }
+      }
+    }
+
+    .workshop {
+      @apply max-w-237.5 mx-auto md:mt-30 max-md:mx-10 mt-16 max-[460px]:mt-10;
+
+      .left-side {
+        @apply flex gap-1.5 justify-center;
+
+        img {
+          @apply h-107.5 max-[460px]:h-60 object-contain;
+        }
+
+        .left-card {
+          @apply bg-white py-4 px-2 shadow-2xl w-30 max-[460px]:w-26 text-center absolute -bottom-6 -right-10 md:bottom-3;
+
+          h1 {
+            @apply text-6xl font-bold text-red-500 max-[460px]:text-4xl;
+          }
+          p {
+            @apply text-red-500 font-medium leading-4.5;
+          }
+        }
+      }
+
+      .right-side {
+        @apply md:w-150 mt-10;
+
+        h5 {
+          @apply text-lg font-medium pb-1 text-dark-blue;
+        }
+
+        h2 {
+          @apply md:text-3xl pb-1 font-bold text-dark-blue text-2xl max-[460px]:text-xl;
+        }
+
+        p {
+          @apply text-gray-700 font-medium text-[14px];
+        }
+
+        a {
+          @apply bg-red-500 text-white py-2 px-4 mt-4 inline-flex items-center gap-4 hover:bg-dark-blue transition-all duration-300;
+
+          span {
+            @apply text-base font-medium;
           }
         }
       }

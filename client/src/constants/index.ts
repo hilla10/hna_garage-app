@@ -9,7 +9,9 @@ import {
 } from 'lucide-react';
 
 import play from '../assets/images/icons/play.webp';
-import garageVideo from '../assets/video/garage.mp4'
+import garageVideo from '../assets/video/garage.mp4';
+import image1 from '../assets/images/resource/image-1.png';
+import image2 from '../assets/images/resource/image-2.png';
 
 const navLinks = [
   {
@@ -140,4 +142,6 @@ export {
   footerLink,
   play,
   garageVideo,
+  image1,
+  image2,
 };
