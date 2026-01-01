@@ -8,21 +8,16 @@ const QualityService = () => {
           <h3>
             Quality Service And <br /> Customer Satisfaction !!
           </h3>
-
           <p>
-            We utilize the most recent symptomatic gear to ensure your vehicle
-            is fixed or adjusted appropriately and in an opportune manner. We
-            are an individual from Professional Auto Service, a first class
-            execution arrange, where free assistance offices share shared
-            objectives of being work-class car administration focuses.{' '}
-          </p>
+            We utilize the most recent diagnostic equipment to ensure your
+            vehicle is fixed or serviced properly and in a timely manner. We are
+            a member of Professional Auto Service, a first-class performance
+            network, where independent service facilities share the goal of
+            being world-class automotive service centers.{' '}
+          </p>{' '}
         </div>
         <div className='quality__service_right-side'>
-          <img
-            src={image3}
-            alt='Speed meter image'
-           
-          />
+          <img src={image3} alt='Speed meter image' />
         </div>
       </div>
     </div>
