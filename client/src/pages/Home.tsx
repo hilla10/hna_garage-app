@@ -4,6 +4,7 @@ import {
   Services,
   WhyChooseUs,
   Workshop,
+  Leadership,
 } from '@components/home';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Services />
       <QualityService />
       <WhyChooseUs />
+      <Leadership />
     </section>
   );
 };

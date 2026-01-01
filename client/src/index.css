@@ -282,6 +282,47 @@ body {
         }
       }
     }
+
+    .leadership {
+      @apply relative bg-cover bg-[url('./assets/images/banner/banner.png')] bg-center w-full md:h-[50vh];
+
+      .content {
+        @apply text-white max-[460px]:w-full  max-[460px]:px-4 py-6 md:ml-50 max-[460px]:ml-0! max-sm:ml-10;
+
+        p {
+          @apply text-white pr-2 font-medium text-lg max-[460px]:text-base max-[361px]:text-sm;
+
+          span {
+            &:nth-child(2) {
+              @apply w-14 h-0.5 bg-red-500 inline-block ml-2;
+            }
+          }
+        }
+
+        h1 {
+          @apply text-3xl md:text-5xl font-bold py-4 max-[460px]:text-2xl max-[460px]:py-2 max-[361px]:text-lg;
+        }
+
+        .link {
+          @apply flex items-center pt-2 gap-4;
+
+          button {
+            @apply rounded-full bg-red-500 flex-center py-2 px-4 cursor-pointer  size-15;
+
+            img {
+              @apply size-10;
+            }
+          }
+          span {
+            @apply text-left text-sm font-medium uppercase;
+          }
+
+          a {
+            @apply md:text-lg text-base font-medium;
+          }
+        }
+      }
+    }
   }
 
   /* ============== Home Style End ============== */

@@ -25,6 +25,7 @@ import service from '../assets/images/icons/service.png';
 import town from '../assets/images/icons/town.png';
 import award from '../assets/images/icons/award.png';
 import redCheckIcon from '../assets/images/icons/icon-1.png';
+import banner from '../assets/images/banner/banner.png';
 
 const navLinks = [
   {
@@ -211,7 +212,7 @@ const additionalServices = [
   {
     id: 5,
     icon: redCheckIcon,
-    text: 'Break Job / Break Services',
+    text: 'Brake Job / Brake Services',
   },
   {
     id: 6,
@@ -264,4 +265,5 @@ export {
   image2,
   image3,
   image4,
+  banner,
 };
