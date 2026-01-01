@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 
 import play from '../assets/images/icons/play.webp';
+import garageVideo from '../assets/video/garage.mp4'
 
 const navLinks = [
   {
@@ -131,4 +132,12 @@ const socialLinks = [
   },
 ];
 
-export { navLinks, contactInfo, socialLinks, services, footerLink, play };
+export {
+  navLinks,
+  contactInfo,
+  socialLinks,
+  services,
+  footerLink,
+  play,
+  garageVideo,
+};

@@ -1,5 +1,5 @@
 const Workshop = () => {
-  return <div>Workshop</div>;
+  return <div></div>;
 };
 
 export default Workshop;
