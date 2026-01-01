@@ -12,6 +12,8 @@ import play from '../assets/images/icons/play.webp';
 import garageVideo from '../assets/video/garage.mp4';
 import image1 from '../assets/images/resource/image-1.png';
 import image2 from '../assets/images/resource/image-2.png';
+import image3 from '../assets/images/resource/image-3.png';
+import image4 from '../assets/images/resource/image-4.png';
 import turbocharger from '../assets/images/icons/turbocharger.png';
 import transmission from '../assets/images/icons/transmission.png';
 import carBrake from '../assets/images/icons/car-brake.png';
@@ -167,4 +169,6 @@ export {
   garageVideo,
   image1,
   image2,
+  image3,
+  image4,
 };

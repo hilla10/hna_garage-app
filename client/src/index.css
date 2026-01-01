@@ -197,6 +197,32 @@ body {
         }
       }
     }
+
+    .quality-service {
+      @apply bg-gray-100;
+
+      .quality__service_container {
+        @apply grid md:grid-cols-2 items-center  max-lg:max-w-full bg-red-500;
+
+        .quality__service_left-side {
+          @apply text-white p-5 w-168.5 md:pl-48.5 max-md:mx-10 max-sm:mx-5 max-md:w-full max-md:pl-0;
+
+          h3 {
+            @apply pb-4 pt-5 text-2xl font-bold  max-sm:px-4;
+          }
+
+          p {
+            @apply text-base font-medium max-sm:px-4;
+          }
+        }
+      }
+
+      .quality__service_right-side {
+        img {
+          @apply object-contain w-228.5;
+        }
+      }
+    }
   }
 
   /* ============== Home Style End ============== */
