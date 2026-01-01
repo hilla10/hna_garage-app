@@ -1,10 +1,11 @@
-import { Hero, Workshop } from '@components/home';
+import { Hero, Services, Workshop } from '@components/home';
 
 const Home = () => {
   return (
     <section className='home'>
       <Hero />
       <Workshop />
+      <Services />
     </section>
   );
 };

@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 @import 'tailwindcss';
 
 @theme {
+  --font-georama: 'Georama', sans-serif;
+  --font-roboto: 'Roboto Mono', monospace;
   --color-dark-blue: #08194a;
   --color-red-500: #ee0d09;
 }
 
 body {
   overflow-x: hidden;
+  @apply font-georama;
 }
 
 @utility flex-between {
@@ -18,9 +23,20 @@ body {
 }
 
 @layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-roboto;
+  }
+}
+
+@layer base {
   /* ============== Header Style Start ============== */
   header {
-    @apply bg-white text-black w-full shadow-md;
+    @apply bg-white text-black w-full shadow-md font-roboto;
     .header-top {
       @apply bg-dark-blue text-white pr-6 flex-between;
     }
@@ -68,10 +84,10 @@ body {
   .home {
     /* Hero Section */
     .hero {
-      @apply relative bg-cover bg-center w-full md:h-[80vh];
+      @apply relative bg-cover bg-center w-full;
 
       .content {
-        @apply w-102.5 text-white absolute lg:top-40 lg:left-51 left-10 top-8 max-[460px]:top-2 max-[460px]:w-full max-[460px]:left-0 max-[460px]:px-4;
+        @apply w-110 text-white absolute lg:top-40 lg:left-51 left-10 top-8 max-[460px]:top-2 max-[460px]:w-full max-[460px]:left-0 max-[460px]:px-4;
 
         p {
           @apply text-white pr-2 font-medium text-lg max-[460px]:text-base max-[361px]:text-sm;
@@ -98,7 +114,7 @@ body {
     }
 
     .workshop {
-      @apply max-w-237.5 mx-auto md:mt-30 max-md:mx-10 mt-16 max-[460px]:mt-10;
+      @apply max-w-237.5 mx-auto md:mt-0 max-lg:mx-10 mt-20 max-[460px]:mt-10 lg:mt-10 max-lg:max-w-full;
 
       .left-side {
         @apply flex gap-1.5 justify-center relative;
@@ -127,7 +143,7 @@ body {
         }
 
         h2 {
-          @apply md:text-3xl pb-1 font-bold text-dark-blue text-2xl max-[460px]:text-xl;
+          @apply md:text-3xl pb-1 font-bold text-dark-blue text-2xl max-[460px]:text-xl whitespace-normal;
         }
 
         p {
@@ -139,6 +155,44 @@ body {
 
           span {
             @apply text-base font-medium;
+          }
+        }
+      }
+    }
+
+    .services {
+      @apply mt-10 bg-gray-100 py-20;
+
+      .service-container {
+        @apply max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10;
+
+        h1 {
+          @apply text-3xl max-md:text-2xl text-dark-blue font-bold pb-4 flex items-center gap-3;
+
+          div {
+            @apply w-10 h-0.5 bg-red-500 mt-5;
+          }
+        }
+
+        .text {
+          @apply text-sm font-medium text-gray-600 pb-8;
+        }
+
+        .grid {
+          @apply grid grid-cols-3 items-center justify-center gap-4 max-lg:grid-cols-2 max-md:grid-cols-1;
+
+          p {
+            @apply text-[14px] font-medium text-gray-800;
+          }
+
+          h4 {
+            @apply text-lg font-medium text-dark-blue;
+          }
+
+          div {
+            a {
+              @apply text-red-500 uppercase font-medium text-[14px] hover:text-red-600;
+            }
           }
         }
       }
@@ -155,7 +209,7 @@ body {
       @apply border-b-2 border-b-[#1e294a] max-md:pr-4;
 
       .grid {
-        @apply max-w-[75vw] max-md:max-w-[100vw] mx-auto grid max-md:grid-cols-2 grid-cols-3  justify-between max-md:pl-8;
+        @apply max-w-[75vw] max-md:max-w-[100vw] mx-auto grid max-md:grid-cols-2 grid-cols-3  justify-between max-md:pl-8 font-roboto;
 
         div {
           @apply border-r-2 border-r-[#1e294a] px-5;
@@ -204,7 +258,7 @@ body {
     }
 
     .copyright-text {
-      @apply text-center font-medium text-[#b2b9c5] pt-6 border-t border-t-[#1e294a];
+      @apply text-center font-medium text-[#b2b9c5] pt-6 border-t border-t-[#1e294a] font-roboto;
     }
   }
 

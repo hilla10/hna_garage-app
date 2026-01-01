@@ -30,7 +30,7 @@ const Navbar = () => {
               <li key={id} className='max-md:py-2'>
                 <Link
                   to={href}
-                  className='font-medium uppercase hover:text-gray-700 max-md:hover:text-red-500'>
+                  className='font-medium uppercase hover:text-gray-700 max-md:hover:text-red-500 '>
                   {name}
                 </Link>
               </li>
