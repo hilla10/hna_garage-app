@@ -71,7 +71,7 @@ body {
       @apply relative bg-cover bg-center w-full md:h-[80vh];
 
       .content {
-        @apply w-102.5 text-white absolute lg:top-40 lg:left-51 left-10 top-8 max-[460px]:top-2 max-[460px]:w-full;
+        @apply w-102.5 text-white absolute lg:top-40 lg:left-51 left-10 top-8 max-[460px]:top-2 max-[460px]:w-full max-[460px]:left-0 max-[460px]:px-4;
 
         p {
           @apply text-white pr-2 font-medium text-lg max-[460px]:text-base max-[361px]:text-sm;
@@ -101,7 +101,7 @@ body {
       @apply max-w-237.5 mx-auto md:mt-30 max-md:mx-10 mt-16 max-[460px]:mt-10;
 
       .left-side {
-        @apply flex gap-1.5 justify-center;
+        @apply flex gap-1.5 justify-center relative;
 
         img {
           @apply h-107.5 max-[460px]:h-60 object-contain;

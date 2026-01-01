@@ -27,10 +27,10 @@ const Workshop = () => {
           <div className='w-15 bg-red-500 h-0.5 mb-2 ' />
           <p className='pb-4'>
             Bring to the table win-win survival strategies to ensure proactive
-            domination. At the end of the day. going forward, a new normal that
-            has evolved from generations HNA GARAGE is on the runway heading
-            towards a streamlined cloud solution. User generated content in
-            real-time will have multiple touch points for offshoring.
+            domination. At the end of the day, going forward, a new normal that
+            has evolved from generation X is on the runway heading towards a
+            streamlined cloud solution. User generated content in real-time will
+            have multiple touch points for offshoring.
           </p>
           <p>
             Capitalize on low hanging fruit to identify a ballpark value added
