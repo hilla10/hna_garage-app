@@ -68,7 +68,7 @@ body {
   .home {
     /* Hero Section */
     .hero {
-      @apply bg-cover bg-center w-full md:h-[80vh] h-[40vh];
+      @apply relative bg-cover bg-center w-full md:h-[80vh] h-[40vh];
 
       .content {
         @apply w-102.5 text-white absolute lg:top-40 lg:left-50 left-10 top-8;
@@ -87,8 +87,8 @@ body {
           @apply text-3xl md:text-5xl font-bold py-4;
         }
 
-        button {
-          @apply rounded-md bg-red-500 flex-center py-2 px-4 hover:text-red-500 hover:bg-white transition-all duration-300 mt-2;
+        .link {
+          @apply rounded-md bg-red-500 flex-center py-2 px-4 hover:text-red-500 hover:bg-white transition-all duration-300 mt-2 w-50;
 
           a {
             @apply md:text-lg text-base font-medium;
@@ -102,7 +102,7 @@ body {
 
   /* ============== Footer Style Start ============== */
   footer {
-    @apply bg-dark-blue text-white pb-5 mt-24;
+    @apply bg-dark-blue text-white pb-5 md:mt-24 mt-10;
 
     .footer-container {
       @apply border-b-2 border-b-[#1e294a] max-md:pr-4;
