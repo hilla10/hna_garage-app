@@ -20,6 +20,11 @@ import carBrake from '../assets/images/icons/car-brake.png';
 import engine from '../assets/images/icons/engine.png';
 import carWheel from '../assets/images/icons/car-wheel.png';
 import carSpray from '../assets/images/icons/car-spray.png';
+import expert from '../assets/images/icons/expert.png';
+import service from '../assets/images/icons/service.png';
+import town from '../assets/images/icons/town.png';
+import award from '../assets/images/icons/award.png';
+import redCheckIcon from '../assets/images/icons/icon-1.png';
 
 const navLinks = [
   {
@@ -159,12 +164,100 @@ const socialLinks = [
   },
 ];
 
+const aboutUs = [
+  {
+    id: 1,
+    title: 'Certified Expert Mechanics',
+    image: expert,
+  },
+  {
+    id: 2,
+    title: 'Fast And Quality Service',
+    image: service,
+  },
+  {
+    id: 3,
+    title: 'Best Prices in Town',
+    image: town,
+  },
+  {
+    id: 4,
+    title: 'Awarded Workshop',
+    image: award,
+  },
+];
+
+const additionalServices = [
+  {
+    id: 1,
+    icon: redCheckIcon,
+    text: 'General Auto Repair & Maintenance',
+  },
+  {
+    id: 2,
+    icon: redCheckIcon,
+    text: 'Transmission Repair & Replacement',
+  },
+  {
+    id: 3,
+    icon: redCheckIcon,
+    text: 'Tire Repair and Replacement',
+  },
+  {
+    id: 4,
+    icon: redCheckIcon,
+    text: 'State Emissions Inspection',
+  },
+  {
+    id: 5,
+    icon: redCheckIcon,
+    text: 'Break Job / Break Services',
+  },
+  {
+    id: 6,
+    icon: redCheckIcon,
+    text: 'Electrical Diagnostics',
+  },
+  {
+    id: 7,
+    icon: redCheckIcon,
+    text: 'Fuel System Repairs',
+  },
+  {
+    id: 8,
+    icon: redCheckIcon,
+    text: 'Starting and Charging Repair',
+  },
+  {
+    id: 9,
+    icon: redCheckIcon,
+    text: 'Steering and Suspension Work',
+  },
+  {
+    id: 10,
+    icon: redCheckIcon,
+    text: 'Emission Repair Facility',
+  },
+  {
+    id: 11,
+    icon: redCheckIcon,
+    text: 'Wheel Alignment',
+  },
+  {
+    id: 12,
+    icon: redCheckIcon,
+    text: 'Computer Diagnostic Testing',
+  },
+];
+
 export {
   navLinks,
   contactInfo,
   socialLinks,
   services,
   footerLink,
+  aboutUs,
+  additionalServices,
   play,
   garageVideo,
   image1,
