@@ -13,7 +13,9 @@ const Footer = () => {
               <p>
                 {name}{' '}
                 {phone && (
-                  <strong className='font-bold text-xl'>{phone}</strong>
+                  <strong className='font-bold text-xl max-[321px]:text-lg'>
+                    {phone}
+                  </strong>
                 )}
               </p>
             </div>
@@ -52,7 +54,8 @@ const Footer = () => {
           <ul>
             {socialLinks.map(({ id, icon: Icon, link }) => (
               <li key={id}>
-                <a href={link} target='_blank'>
+                <a href={link} target='_blank' rel='noopener noreferrer'>
+                  {' '}
                   <Icon className='size-5' />
                 </a>
               </li>
