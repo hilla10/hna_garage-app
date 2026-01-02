@@ -54,7 +54,8 @@ const Footer = () => {
           <ul>
             {socialLinks.map(({ id, icon: Icon, link }) => (
               <li key={id}>
-                <a href={link} target='_blank'>
+                <a href={link} target='_blank' rel='noopener noreferrer'>
+                  {' '}
                   <Icon className='size-5' />
                 </a>
               </li>
