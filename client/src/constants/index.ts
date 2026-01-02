@@ -10,6 +10,7 @@ import {
 
 import play from '../assets/images/icons/play.webp';
 import garageVideo from '../assets/video/garage.mp4';
+import automotiveVideo from '../assets/video/automotive.mp4';
 import image1 from '../assets/images/resource/image-1.png';
 import image2 from '../assets/images/resource/image-2.png';
 import image3 from '../assets/images/resource/image-3.png';
@@ -101,6 +102,7 @@ const services = [
   {
     id: 1,
     name: 'Performance Upgrade',
+    category: 'Service and Repairs',
     href: '#',
     linkText: 'Read More +',
     image: turbocharger,
@@ -108,13 +110,15 @@ const services = [
   {
     id: 2,
     name: 'Transmission Service',
+    category: 'Service and Repairs',
     href: '#',
     linkText: 'Read More +',
     image: transmission,
   },
   {
     id: 3,
-    name: 'Break Repair & Service',
+    name: 'Brake Repair & Service',
+    category: 'Service and Repairs',
     href: '#',
     linkText: 'Read More +',
     image: carBrake,
@@ -122,13 +126,15 @@ const services = [
   {
     id: 4,
     name: 'Engine Service & Repair',
+    category: 'Service and Repairs',
     href: '#',
     linkText: 'Read More +',
     image: engine,
   },
   {
     id: 5,
-    name: 'Trye & Wheels',
+    name: 'Tire & Wheels',
+    category: 'Service and Repairs',
     href: '#',
     linkText: 'Read More +',
     image: carWheel,
@@ -136,6 +142,7 @@ const services = [
   {
     id: 6,
     name: 'Denting & Painting',
+    category: 'Service and Repairs',
     href: '#',
     linkText: 'Read More +',
     image: carSpray,
@@ -261,6 +268,7 @@ export {
   additionalServices,
   play,
   garageVideo,
+  automotiveVideo,
   image1,
   image2,
   image3,

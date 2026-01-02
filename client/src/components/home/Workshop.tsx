@@ -39,7 +39,7 @@ const Workshop = () => {
             information highway will close the loop on focusing
           </p>
 
-          <Link to='about'>
+          <Link to='/about'>
             <span> About Us</span> <ArrowRight />{' '}
           </Link>
         </div>
