@@ -323,13 +323,37 @@ body {
         }
       }
     }
+
+    .appointment-cta {
+      @apply max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10 mt-10;
+
+      .appointment-container {
+        @apply bg-red-500 lg:p-10 p-5 flex items-center justify-between text-white max-md:flex-col max-md:gap-5;
+
+        h4 {
+          @apply text-base lg:text-xl font-bold pb-1 text-center max-md:pb-2;
+        }
+
+        p {
+          @apply text-[12px] font-medium text-center;
+        }
+
+        h2 {
+          @apply lg:text-3xl font-bold font-georama text-lg max-md:text-2xl;
+        }
+
+        a {
+          @apply text-dark-blue bg-white flex items-center justify-center gap-2 py-3 px-4  lg:text-sm text-[12px] font-bold hover:bg-dark-blue hover:text-white transition-all duration-300 rounded-md uppercase;
+        }
+      }
+    }
   }
 
   /* ============== Home Style End ============== */
 
   /* ============== Footer Style Start ============== */
   footer {
-    @apply bg-dark-blue text-white pb-5 md:mt-24 mt-10;
+    @apply bg-dark-blue text-white pb-5 mt-10;
 
     .footer-container {
       @apply border-b-2 border-b-[#1e294a] max-md:pr-4;
