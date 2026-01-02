@@ -100,11 +100,11 @@ body {
         }
 
         h1 {
-          @apply text-3xl md:text-5xl font-bold py-4 max-[460px]:text-2xl max-[460px]:py-2 max-[361px]:text-lg;
+          @apply text-3xl md:text-5xl font-bold py-4 max-[460px]:text-2xl max-[460px]:py-2 max-[361px]:text-lg max-[321px]:text-base max-[321px]:py-1;
         }
 
         .link {
-          @apply rounded-md bg-red-500 flex-center py-2 px-4 hover:text-red-500 hover:bg-white transition-all duration-300 mt-2 w-50 max-[460px]:mt-0 max-[460px]:w-38;
+          @apply rounded-md bg-red-500 flex-center py-2 px-4 hover:text-red-500 hover:bg-white transition-all duration-300 mt-2 w-50 max-[460px]:mt-0 max-[460px]:w-38 max-[321px]:text-[12px];
 
           a {
             @apply md:text-lg text-base font-medium;
@@ -359,7 +359,7 @@ body {
       @apply border-b-2 border-b-[#1e294a] max-md:pr-4;
 
       .grid {
-        @apply max-w-[75vw] max-md:max-w-[100vw] mx-auto grid max-md:grid-cols-2 grid-cols-3  justify-between max-md:pl-8 font-roboto;
+        @apply max-w-[75vw] max-md:max-w-[100vw] mx-auto grid max-[400px]:grid-cols-1 min-[400px]:grid-cols-2 lg:grid-cols-3 justify-between max-md:pl-8 font-roboto;
 
         div {
           @apply border-r-2 border-r-[#1e294a] px-5;
@@ -369,14 +369,14 @@ body {
           }
 
           p {
-            @apply text-lg py-2 text-wrap pb-4;
+            @apply text-lg py-2 text-wrap pb-4 max-[321px]:text-base;
           }
         }
       }
     }
 
     .footer-link {
-      @apply max-w-[85vw] max-md:max-w-[80vw] mx-auto mt-10 flex flex-wrap gap-5 justify-between items-start pb-6;
+      @apply max-w-[85vw] max-md:max-w-[80vw] mx-auto mt-10 flex flex-wrap gap-5 justify-between items-start pb-6 max-md:text-center max-md:justify-center;
 
       .text {
         @apply text-base md:w-[33%] font-medium text-[#b2b9c5] pb-6;

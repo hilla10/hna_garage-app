@@ -13,7 +13,9 @@ const Footer = () => {
               <p>
                 {name}{' '}
                 {phone && (
-                  <strong className='font-bold text-xl'>{phone}</strong>
+                  <strong className='font-bold text-xl max-[321px]:text-lg'>
+                    {phone}
+                  </strong>
                 )}
               </p>
             </div>
