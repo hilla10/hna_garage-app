@@ -113,6 +113,7 @@ body {
       }
     }
 
+    /* Workshop section */
     .workshop {
       @apply max-w-237.5 mx-auto md:mt-0 max-lg:mx-10 mt-20 max-[460px]:mt-10 lg:mt-10 max-lg:max-w-full;
 
@@ -159,7 +160,7 @@ body {
         }
       }
     }
-
+    /* Services section */
     .services {
       @apply mt-10 bg-gray-100 py-20;
 
@@ -198,6 +199,7 @@ body {
       }
     }
 
+    /* Quality services section */
     .quality-service {
       @apply bg-gray-100;
 
@@ -224,6 +226,7 @@ body {
       }
     }
 
+    /* why us section */
     .why-us {
       @apply bg-white max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10 py-16;
       & > div {
@@ -283,6 +286,8 @@ body {
       }
     }
 
+    /* Leadership section */
+
     .leadership {
       @apply relative bg-cover bg-[url('./assets/images/banner/banner.png')] bg-center w-full md:h-[50vh];
 
@@ -324,6 +329,7 @@ body {
       }
     }
 
+    /* Appointment section */
     .appointment-cta {
       @apply max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10 mt-10;
 
@@ -350,6 +356,30 @@ body {
   }
 
   /* ============== Home Style End ============== */
+
+  /* ============== About Style Start ============== */
+  .about {
+    .hero {
+      @apply bg-[url('./assets/images/background/bg-3.png')] bg-contain bg-right w-full bg-no-repeat;
+
+      .content {
+        @apply max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10 text-white  max-[460px]:w-full  max-[460px]:px-4 lg:py-16 py-1.5;
+
+        h1 {
+          @apply text-3xl md:text-5xl font-bold py-4 max-[460px]:text-2xl max-[460px]:py-2 max-[361px]:text-lg max-[321px]:text-base max-[321px]:py-1 max-lg:pb-2.5 font-georama;
+        }
+
+        h5 {
+          @apply flex items-center text-white font-medium pb-1 font-georama;
+
+          span {
+            @apply text-red-500;
+          }
+        }
+      }
+    }
+  }
+  /* ============== About Style End ============== */
 
   /* ============== Footer Style Start ============== */
   footer {

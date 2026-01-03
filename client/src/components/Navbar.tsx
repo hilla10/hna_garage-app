@@ -29,6 +29,7 @@ const Navbar = () => {
             {navLinks.map(({ id, name, href }) => (
               <li key={id} className='max-md:py-2'>
                 <Link
+                onClick={() => setOpenMenu(false)}
                   to={href}
                   className='font-medium uppercase hover:text-gray-700 max-md:hover:text-red-500 '>
                   {name}
