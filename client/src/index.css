@@ -359,20 +359,21 @@ body {
 
   /* ============== About Style Start ============== */
   .about {
+    /* Hero section */
     .hero {
-      @apply bg-[url('./assets/images/background/bg-3.png')] bg-contain bg-right w-full bg-no-repeat;
+      @apply bg-[url('./assets/images/background/bg-3.png')] bg-contain bg-right w-full bg-no-repeat max-sm:bg-cover;
 
       .content {
-        @apply max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10 text-white  max-[460px]:w-full  max-[460px]:px-4 lg:py-16 py-1.5;
+        @apply max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10 text-white  max-[460px]:w-full  max-[460px]:px-4 lg:py-16 py-1.5 max-[460px]:py-0;
 
         h1 {
-          @apply text-3xl md:text-5xl font-bold py-4 max-[460px]:text-2xl max-[460px]:py-2 max-[361px]:text-lg max-[321px]:text-base max-[321px]:py-1 max-lg:pb-2.5 font-georama;
+          @apply text-3xl md:text-5xl font-bold py-4 max-[460px]:text-2xl max-[460px]:py-2 max-[361px]:text-lg max-[321px]:text-base max-[321px]:py-1 max-lg:pb-2.5 font-georama max-[460px]:pb-0;
         }
 
-        h5 {
-          @apply flex items-center text-white font-medium pb-1 font-georama;
+        ol {
+          @apply flex items-center text-white font-medium pb-1 font-georama max-[460px]:pb-2;
 
-          span {
+          a {
             @apply text-red-500;
           }
         }

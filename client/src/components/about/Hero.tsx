@@ -1,4 +1,5 @@
 import { ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -6,9 +7,17 @@ const Hero: React.FC = () => {
       <div className='content'>
         {' '}
         <h1>About Us</h1>
-        <h5>
-          <span>Home </span> <ChevronRight /> About Us
-        </h5>
+        <nav aria-label='breadcrumb'>
+          <ol className='breadcrumb'>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+              <ChevronRight aria-hidden='true' />
+            </li>
+            <li aria-current='page'>About Us</li>
+          </ol>
+        </nav>
       </div>
     </div>
   );
