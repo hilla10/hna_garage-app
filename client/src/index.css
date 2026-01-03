@@ -379,6 +379,26 @@ body {
         }
       }
     }
+
+    .skill {
+      @apply max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10 pt-20 flex max-lg:flex-col items-center gap-9;
+
+      .left-side {
+        @apply lg:w-167.5;
+
+        h3 {
+          @apply text-3xl font-bold pb-3 text-dark-blue;
+        }
+
+        p {
+          @apply text-gray-500 text-sm font-medium pb-4 leading-6.5;
+        }
+      }
+
+      img {
+        @apply object-cover;
+      }
+    }
   }
   /* ============== About Style End ============== */
 
