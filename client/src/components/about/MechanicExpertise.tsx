@@ -4,10 +4,7 @@ const MechanicExpertise = () => {
   return (
     <div className='mechanicExpertise'>
       <div className='left-side'>
-        {' '}
-        <h3>
-          We are highly MechanicExpertise mechanics for your car repair
-        </h3>{' '}
+        <h3>We are highly experienced mechanics for your car repair</h3>{' '}
         <p>
           Bring to the table win-win survival strategies to ensure proactive
           domination. At the end of the day, going forward, a new normal that
