@@ -1,10 +1,13 @@
 import { image5 } from '@constants';
 
-const Skilled = () => {
+const MechanicExpertise = () => {
   return (
-    <div className='skill'>
-      <div className='left-side '>
-        <h3>We are highly skilled mechanics for you car repair</h3>
+    <div className='mechanicExpertise'>
+      <div className='left-side'>
+        {' '}
+        <h3>
+          We are highly MechanicExpertise mechanics for your car repair
+        </h3>{' '}
         <p>
           Bring to the table win-win survival strategies to ensure proactive
           domination. At the end of the day, going forward, a new normal that
@@ -12,7 +15,6 @@ const Skilled = () => {
           streamlined cloud solution. User generated content in real-time will
           have multiple touchpoints for offshoring
         </p>
-
         <p>
           Capitalize on low hanging fruit to identify a ballpark value added
           activity to beta test. Override the digital divide with additional
@@ -28,4 +30,4 @@ const Skilled = () => {
   );
 };
 
-export default Skilled;
+export default MechanicExpertise;
