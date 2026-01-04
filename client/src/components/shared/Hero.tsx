@@ -1,12 +1,17 @@
 import { ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Hero: React.FC = () => {
+interface HeroProp {
+  title: string;
+  bgImage: string;
+}
+
+const Hero = ({ title, bgImage }: HeroProp) => {
   return (
     <div className='hero'>
+      <img src={bgImage} alt={`${title} hero banner`} />{' '}
       <div className='content'>
-        {' '}
-        <h1>About Us</h1>
+        <h1>{title}</h1>
         <nav aria-label='breadcrumb'>
           <ol className='breadcrumb'>
             <li>
@@ -15,7 +20,7 @@ const Hero: React.FC = () => {
             <li>
               <ChevronRight aria-hidden='true' />
             </li>
-            <li aria-current='page'>About Us</li>
+            <li aria-current='page'>{title}</li>
           </ol>
         </nav>
       </div>
