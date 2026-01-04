@@ -28,6 +28,8 @@ import town from '../assets/images/icons/town.png';
 import award from '../assets/images/icons/award.png';
 import redCheckIcon from '../assets/images/icons/icon-1.png';
 import banner from '../assets/images/banner/banner.png';
+import aboutBg from '../assets/images/background/about-bg.png';
+import contactBg from '../assets/images/background/contact-bg.png';
 
 const navLinks = [
   {
@@ -55,7 +57,7 @@ const navLinks = [
 const contactInfo = [
   {
     id: 1,
-    name: '54B, Tailstoi Town 5238 MT, La city, IA 522364',
+    name: 'Shiromeda Bus Stop | ሽሮ ሜዳ አቶቢስ ማቆያ',
     icon: MapPin,
   },
   {
@@ -67,6 +69,32 @@ const contactInfo = [
     id: 3,
     name: 'Call us on: ',
     phone: '+251 99 549 1020',
+    icon: Phone,
+  },
+];
+
+const address = [
+  {
+    id: 1,
+    title: 'Address',
+    // mirror contactInfo name format
+    name: 'Shiromeda Bus Stop | ሽሮ ሜዳ አቶቢስ ማቆያ',
+    icon: MapPin,
+  },
+  {
+    id: 2,
+    title: 'Email',
+    // match contactInfo 'Email us: ...' format so components can render consistently
+    name: 'Email us: contact@hna.com',
+    icon: Mail,
+  },
+  {
+    id: 3,
+    title: 'Phone',
+    // use canonical primary phone like contactInfo, keep any additional numbers in a separate field
+    name: 'Call us on: ',
+    phone: '+251 99 549 1020',
+    altPhones: ['+251 96 774 5172'],
     icon: Phone,
   },
 ];
@@ -264,6 +292,7 @@ export {
   contactInfo,
   socialLinks,
   services,
+  address,
   footerLink,
   aboutUs,
   additionalServices,
@@ -276,4 +305,6 @@ export {
   image4,
   image5,
   banner,
+  aboutBg,
+  contactBg,
 };

@@ -1,9 +1,9 @@
 import { garageVideo } from '@constants';
 import { Link } from 'react-router-dom';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
-    <div className='hero relative'>
+    <div className='home-hero'>
       <video autoPlay muted loop playsInline className='w-screen'>
         <source src={garageVideo} type='video/mp4' />
         Your browser does not support the video tag.

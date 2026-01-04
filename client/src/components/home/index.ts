@@ -4,6 +4,5 @@ import Services from './Services';
 import QualityService from './QualityService';
 import WhyChooseUs from './WhyChooseUs';
 import Leadership from './Leadership';
-import AppointmentCTA from './AppointmentCTA'
 
-export { Workshop, Hero, Services, QualityService, WhyChooseUs, Leadership,AppointmentCTA};
+export { Workshop, Hero, Services, QualityService, WhyChooseUs, Leadership };
