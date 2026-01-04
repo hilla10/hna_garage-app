@@ -5,8 +5,8 @@ import {
   WhyChooseUs,
   Workshop,
   Leadership,
-  AppointmentCTA
 } from '@components/home';
+import { AppointmentCTA } from '@components/shared';
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       <QualityService />
       <WhyChooseUs />
       <Leadership />
-      <AppointmentCTA/>
+      <AppointmentCTA />
     </section>
   );
 };
