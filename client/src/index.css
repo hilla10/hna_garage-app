@@ -245,11 +245,11 @@ body {
         @apply text-[12px] font-medium text-center;
       }
 
-      h2 {
+      phone-number {
         @apply lg:text-3xl font-bold font-georama text-lg max-md:text-2xl;
       }
 
-      a {
+      .btn {
         @apply text-dark-blue bg-white flex items-center justify-center gap-2 py-3 px-4  lg:text-sm text-[12px] font-bold hover:bg-dark-blue hover:text-white transition-all duration-300 rounded-md uppercase;
       }
     }

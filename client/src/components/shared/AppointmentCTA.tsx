@@ -9,10 +9,10 @@ const AppointmentCTA = () => {
           <h4>Schedule Your Appointment Today</h4>
           <p>Your Automotive Repair & Maintenance Service Specialist</p>
         </div>
-        <h2>
+        <div className='phone-number'>
           <a href='tel:+251995491020'>+251.99.549.1020</a>
-        </h2>{' '}
-        <Link to='/contact'>
+        </div>{' '}
+        <Link to='/contact' className='btn'>
           Contact Us
           <ArrowRight className='size-5' />
         </Link>
