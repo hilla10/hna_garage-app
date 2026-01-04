@@ -12,7 +12,7 @@ const Address = () => {
           loading='eager'
           referrerPolicy='no-referrer-when-downgrade'></iframe>
 
-        <div className='w-200'>
+        <div className='lg:w-200 w-full'>
           <h1>Our Address</h1>
           <p>
             HNA Garage — Shiromeda Bus Stop Open Mon–Fri 08:00–18:00, Sat
