@@ -23,15 +23,21 @@ const Address = () => {
           <div>
             {address.map(({ id, title, name, icon: Icon, phone }) => (
               <div key={id} className='flex items-center gap-4 pb-4'>
-                <Icon className='size-10 text-red-500' />
+                <Icon className='size-10 text-red-500' aria-hidden='true' />
                 <div>
                   <h4>{title}:</h4>
                   <p>
-                    <span> {name}</span> {phone && phone}
+                    <span>{name}</span>
+                    {phone && (
+                      <>
+                        {' '}
+                        <a href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a>
+                      </>
+                    )}
                   </p>
                 </div>
               </div>
-            ))}
+            ))}{' '}
           </div>
         </div>
       </div>
