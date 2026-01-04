@@ -77,19 +77,24 @@ const address = [
   {
     id: 1,
     title: 'Address',
+    // mirror contactInfo name format
     name: 'Shiromeda Bus Stop | ሽሮ ሜዳ አቶቢስ ማቆያ',
     icon: MapPin,
   },
   {
     id: 2,
     title: 'Email',
-    name: 'contact@hna.com',
+    // match contactInfo 'Email us: ...' format so components can render consistently
+    name: 'Email us: contact@hna.com',
     icon: Mail,
   },
   {
     id: 3,
     title: 'Phone',
-    phone: '+251 99 549 1020 / +251 96 774 5172',
+    // use canonical primary phone like contactInfo, keep any additional numbers in a separate field
+    name: 'Call us on: ',
+    phone: '+251 99 549 1020',
+    altPhones: ['+251 96 774 5172'],
     icon: Phone,
   },
 ];

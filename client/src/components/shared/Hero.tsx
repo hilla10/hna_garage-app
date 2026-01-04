@@ -9,9 +9,8 @@ interface HeroProp {
 const Hero = ({ title, bgImage }: HeroProp) => {
   return (
     <div className='hero'>
-      <img src={bgImage} alt='hero image' />
+      <img src={bgImage} alt={`${title} hero banner`} />{' '}
       <div className='content'>
-        {' '}
         <h1>{title}</h1>
         <nav aria-label='breadcrumb'>
           <ol className='breadcrumb'>

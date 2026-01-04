@@ -43,9 +43,8 @@ body {
     @apply w-full relative;
 
     img {
-      @apply bg-contain w-full;
+      @apply object-contain w-full;
     }
-
     .content {
       @apply absolute lg:top-10 max-lg:top-5  max-sm:top-1 max-[460px]:w-full max-[460px]:left-0 max-w-237.5 mx-50 max-lg:mx-10 max-lg:max-w-full max-[460px]:-top-1!;
 
