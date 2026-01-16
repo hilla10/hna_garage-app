@@ -51,7 +51,8 @@ const Login = () => {
               className='icon'
               onClick={() => setShowPassword(!showPassword)}
               aria-label={showPassword ? 'Hide password' : 'Show password'}>
-              {showPassword ? <Eye /> : <EyeOff />}
+              {/* {showPassword ? <Eye /> : <EyeOff />} */}
+              {showPassword ? <EyeOff /> : <Eye />}
             </button>
           </div>
           {/* Submit */}

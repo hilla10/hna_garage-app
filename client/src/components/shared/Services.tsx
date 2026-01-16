@@ -22,10 +22,9 @@ const Services = () => {
                 <h4>{name}</h4>
               </div>
               <div className='flex-between px-6 pb-4'>
-                {' '}
                 <a href={href}>{linkText}</a>
                 <img src={image} alt={name} />
-              </div>
+              </div>{' '}
               <div className='w-full h-1 bg-red-500 rounded-bl-lg rounded-br-lg' />
             </div>
           ))}

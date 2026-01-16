@@ -72,9 +72,9 @@ const Signup = () => {
               onClick={() => setShowPassword(!showPassword)}
               aria-label={showPassword ? 'Hide password' : 'Show password'}>
               {showPassword ? (
-                <Eye className='icon' />
-              ) : (
                 <EyeOff className='icon' />
+              ) : (
+                <Eye className='icon' />
               )}
             </button>
           </div>
@@ -95,9 +95,9 @@ const Signup = () => {
                 showConfirmPassword ? 'Hide password' : 'Show password'
               }>
               {showConfirmPassword ? (
-                <Eye className='icon' />
-              ) : (
                 <EyeOff className='icon' />
+              ) : (
+                <Eye className='icon' />
               )}
             </button>
           </div>
