@@ -38,9 +38,12 @@ const Navbar = () => {
             ))}
           </ul>
           <div className='border-right' />
-          <button onClick={() => setOpenMenu(false)}>
-            <Link to='/login'>Sign In</Link>
-          </button>
+          <Link
+            className='nav-link'
+            to='/login'
+            onClick={() => setOpenMenu(false)}>
+            Sign In
+          </Link>{' '}
         </div>
 
         {openMenu ? (

@@ -21,7 +21,8 @@ const Services = () => {
                 <p>{category}</p>
                 <h4>{name}</h4>
               </div>
-              <div className='flex-between  px-6 pb-4'>
+              <div className='flex-between px-6 pb-4'>
+                {' '}
                 <a href={href}>{linkText}</a>
                 <img src={image} alt={name} />
               </div>

@@ -37,14 +37,15 @@ const Leadership = () => {
           </span>
         </div>
       </div>
-
       {showVideo && (
         <div
           role='dialog'
           aria-modal='true'
+          onClick={(e) => e.target === e.currentTarget && setShowVideo(false)}
           className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 p-4'>
           <div className='relative w-full max-w-3xl'>
             <button
+              ref={(el) => el?.focus()}
               aria-label='Close video'
               onClick={() => setShowVideo(false)}
               className='absolute right-2 top-2 z-10 rounded bg-white/80 p-2 text-black'>
@@ -59,7 +60,7 @@ const Leadership = () => {
             />
           </div>
         </div>
-      )}
+      )}{' '}
     </div>
   );
 };
