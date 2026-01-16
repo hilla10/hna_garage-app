@@ -5,15 +5,14 @@ const Services = () => {
     <div className='services'>
       <div className='service-container'>
         <h1>
-          Our Services <div />
-        </h1>
+          Our Services <span />
+        </h1>{' '}
         <p className='text'>
           Bring to the table win-win survival strategies to ensure proactive
           domination. At the end of the day, going forward, a new normal that
           has evolved from generation X is on the runway heading towards a
           streamlined cloud solution.{' '}
         </p>
-
         <div className='grid'>
           {services.map(({ id, name, category, href, linkText, image }) => (
             <div key={id} className='bg-white rounded-lg'>

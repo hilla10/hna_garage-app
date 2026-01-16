@@ -255,11 +255,10 @@ body {
   }
 
   /* 
-  Reusable Appointment Component
+  Reusable Services Component
   Used on: Home page & Service Page
   Purpose: Displays services
 */
-
   .services {
     @apply mt-10 bg-gray-100 py-20;
 
@@ -269,7 +268,7 @@ body {
       h1 {
         @apply text-3xl max-md:text-2xl text-dark-blue font-bold pb-4 flex items-center gap-3;
 
-        div {
+        span {
           @apply w-10 h-0.5 bg-red-500 mt-5;
         }
       }

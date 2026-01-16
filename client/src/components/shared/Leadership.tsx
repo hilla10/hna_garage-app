@@ -55,6 +55,7 @@ const Leadership = () => {
               src={automotiveVideo}
               controls
               autoPlay
+              muted
               playsInline
               className='w-full rounded bg-black'
             />

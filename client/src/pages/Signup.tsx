@@ -19,16 +19,16 @@ const Signup = () => {
         {/* Social Signup */}
         {/* TODO */}{' '}
         <div className='auth-social-btn'>
-          <button>
+          <button type='button'>
             <img src={google} alt='Google' className='w-5 h-5' />
             Continue with Google
           </button>
 
-          <button>
+          <button type='button'>
             <img src={github} alt='GitHub' className='w-5 h-5' />
             Continue with GitHub
           </button>
-        </div>
+        </div>{' '}
         {/* Divider */}
         <div className='auth-divider'>
           {' '}
@@ -37,7 +37,7 @@ const Signup = () => {
           <div />
         </div>
         {/* Signup Form */}
-        <form>
+        <form onSubmit={(e) => e.preventDefault()}>
           <div>
             <label htmlFor='username'>Username</label>
             <input
