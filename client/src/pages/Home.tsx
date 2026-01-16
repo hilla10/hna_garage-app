@@ -1,12 +1,10 @@
+import { Hero, QualityService, Workshop } from '@components/home';
 import {
-  Hero,
-  QualityService,
-  Services,
-  WhyChooseUs,
-  Workshop,
+  AppointmentCTA,
   Leadership,
-} from '@components/home';
-import { AppointmentCTA } from '@components/shared';
+  WhyChooseUs,
+  Services,
+} from '@components/shared';
 
 const Home = () => {
   return (

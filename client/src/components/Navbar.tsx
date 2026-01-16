@@ -29,7 +29,7 @@ const Navbar = () => {
             {navLinks.map(({ id, name, href }) => (
               <li key={id} className='max-md:py-2'>
                 <Link
-                onClick={() => setOpenMenu(false)}
+                  onClick={() => setOpenMenu(false)}
                   to={href}
                   className='font-medium uppercase hover:text-gray-700 max-md:hover:text-red-500 '>
                   {name}
@@ -38,7 +38,9 @@ const Navbar = () => {
             ))}
           </ul>
           <div className='border-right' />
-          <button>Sign In</button>
+          <button onClick={() => setOpenMenu(false)}>
+            <Link to='/login'>Sign In</Link>
+          </button>
         </div>
 
         {openMenu ? (

@@ -1,6 +1,11 @@
 import { MechanicExpertise } from '@components/about';
-import { Leadership, WhyChooseUs, Workshop } from '@components/home';
-import { AppointmentCTA, Hero } from '@components/shared';
+import { Workshop } from '@components/home';
+import {
+  AppointmentCTA,
+  Hero,
+  Leadership,
+  WhyChooseUs,
+} from '@components/shared';
 import { aboutBg } from '@constants';
 
 const About = () => {

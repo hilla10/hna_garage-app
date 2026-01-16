@@ -30,6 +30,10 @@ import redCheckIcon from '../assets/images/icons/icon-1.png';
 import banner from '../assets/images/banner/banner.png';
 import aboutBg from '../assets/images/background/about-bg.png';
 import contactBg from '../assets/images/background/contact-bg.png';
+import serviceBg from '../assets/images/background/services-bg.png'
+import google from '../assets/images/icons/google.svg';
+import github from '../assets/images/icons/github.svg';
+
 
 const navLinks = [
   {
@@ -307,4 +311,7 @@ export {
   banner,
   aboutBg,
   contactBg,
+  serviceBg,
+  google,
+  github
 };

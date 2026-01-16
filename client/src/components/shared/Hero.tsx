@@ -10,7 +10,8 @@ const Hero = ({ title, bgImage }: HeroProp) => {
   return (
     <div className='hero'>
       <img src={bgImage} alt={`${title} hero banner`} />{' '}
-      <div className='content'>
+      {
+        title === '' ? '' :( <div className='content'>
         <h1>{title}</h1>
         <nav aria-label='breadcrumb'>
           <ol className='breadcrumb'>
@@ -23,7 +24,9 @@ const Hero = ({ title, bgImage }: HeroProp) => {
             <li aria-current='page'>{title}</li>
           </ol>
         </nav>
-      </div>
+      </div>)
+      }
+      
     </div>
   );
 };

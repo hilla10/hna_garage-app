@@ -253,6 +253,50 @@ body {
       }
     }
   }
+
+  /* 
+  Reusable Appointment Component
+  Used on: Home page & Service Page
+  Purpose: Displays services
+*/
+
+  .services {
+    @apply mt-10 bg-gray-100 py-20;
+
+    .service-container {
+      @apply max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10;
+
+      h1 {
+        @apply text-3xl max-md:text-2xl text-dark-blue font-bold pb-4 flex items-center gap-3;
+
+        div {
+          @apply w-10 h-0.5 bg-red-500 mt-5;
+        }
+      }
+
+      .text {
+        @apply text-sm font-medium text-gray-600 pb-8;
+      }
+
+      .grid {
+        @apply grid grid-cols-3 items-center justify-center gap-4 max-lg:grid-cols-2 max-md:grid-cols-1;
+
+        p {
+          @apply text-[14px] font-medium text-gray-800;
+        }
+
+        h4 {
+          @apply text-lg font-medium text-dark-blue;
+        }
+
+        div {
+          a {
+            @apply text-red-500 uppercase font-medium text-[14px] hover:text-red-600;
+          }
+        }
+      }
+    }
+  }
 }
 
 @layer base {
@@ -330,45 +374,6 @@ body {
 
           a {
             @apply md:text-lg text-base font-medium;
-          }
-        }
-      }
-    }
-
-    /* Services section */
-    .services {
-      @apply mt-10 bg-gray-100 py-20;
-
-      .service-container {
-        @apply max-w-237.5 mx-auto max-lg:max-w-full max-lg:mx-10;
-
-        h1 {
-          @apply text-3xl max-md:text-2xl text-dark-blue font-bold pb-4 flex items-center gap-3;
-
-          div {
-            @apply w-10 h-0.5 bg-red-500 mt-5;
-          }
-        }
-
-        .text {
-          @apply text-sm font-medium text-gray-600 pb-8;
-        }
-
-        .grid {
-          @apply grid grid-cols-3 items-center justify-center gap-4 max-lg:grid-cols-2 max-md:grid-cols-1;
-
-          p {
-            @apply text-[14px] font-medium text-gray-800;
-          }
-
-          h4 {
-            @apply text-lg font-medium text-dark-blue;
-          }
-
-          div {
-            a {
-              @apply text-red-500 uppercase font-medium text-[14px] hover:text-red-600;
-            }
           }
         }
       }
@@ -459,6 +464,73 @@ body {
     }
   }
   /* ============== Contact Style End ============== */
+
+
+  /* ============== Login /Signup Style Start ============== */
+  .auth-page {
+    @apply min-h-screen flex items-center justify-center bg-gray-100 px-4;
+
+    .auth-card {
+      @apply w-full max-w-md bg-white rounded-2xl shadow-xl p-8 my-10;
+
+      h2 {
+        @apply text-2xl font-bold text-gray-900;
+      }
+
+      .auth-social-btn {
+        @apply mb-3 flex gap-2 items-center justify-center;
+
+        button {
+          @apply w-full flex items-center justify-center gap-3 border border-gray-300 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-100 transition;
+
+          img {
+
+            @apply size-5
+          }
+        }
+      }
+
+      .auth-divider {
+        @apply flex items-center my-6;
+        div {
+          @apply flex-1 h-px bg-gray-300;
+        }
+
+        span {
+          @apply px-3 text-xs text-gray-500 uppercase;
+        }
+      }
+
+      form {
+        @apply space-y-4;
+        label {
+          @apply block text-sm font-medium text-gray-700 mb-1;
+        }
+
+        input {
+          @apply w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none;
+        }
+
+        .icon {
+          @apply absolute top-1/2 right-3 cursor-pointer;
+        }
+.submit {
+  @apply w-full bg-dark-blue text-white py-2.5 rounded-lg font-medium hover:bg-dark-blue/90 transition cursor-pointer;
+}
+      }
+
+      .auth-terms {
+        @apply text-xs text-gray-500 text-center mt-4;
+      }
+
+      .auth-footer {
+        @apply text-center text-sm text-gray-600 mt-6;
+      }
+    }
+  }
+  /* ============== Login /Signup Style End ============== */
+
+
 
   /* ============== Footer Style Start ============== */
   footer {
